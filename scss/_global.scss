@@ -23,7 +23,7 @@ a {
   color: $primary;
   @include transition-all;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($primary, 0.1);
   }
 }
 
@@ -45,7 +45,7 @@ h6 {
 }
 
 .text-faded {
-  color: fade-out($white, .3);
+  color: fade-out($white, 0.3);
 }
 
 section {
@@ -76,4 +76,28 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+div.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTextShadow {
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+img.SheaParrott {
+  border-radius: 50%;
+  width: 250px;
+}
+@media (min-width: 768px) {
+  img.SheaParrott {
+    border-radius: 50%;
+    width: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  img.SheaParrott {
+    border-radius: 50%;
+    width: 350px;
+  }
 }
